@@ -2,10 +2,10 @@
 	"name": "asynquence-contrib",
 	"version": "0.28.0",
 	"description": "additional plugins for asynquence",
-	"main": "./contrib.src.js",
+	"main": "contrib.src.js",
 	"scripts": {
-		"test": "./node-tests.js",
-		"bundle": "./bundle.js",
+		"test": "node node-tests.js",
+		"bundle": "node bundle.js",
 		"bundle-es6": "npm run bundle -- --keep-es6 --bundle=contrib-es6.src.js",
 		"bundle-common": "npm run bundle -- --bundle=contrib-common.src.js --min-bundle=contrib-common.js after iterable race runner toPromise wrap",
 		"build": "npm run bundle && npm run bundle-es6 && npm run bundle-common",
